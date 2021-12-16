@@ -1,7 +1,7 @@
 """
 Hay cuatro errores en este código. Identifícalos. 
 """
-#exercicis del capítol 03
+#exercici 7 del capítol 03
 #maria nicolau jaume
 """
 respuesta = input("¿Cuál es el nombre del compañero de Sherlock Holmes?")

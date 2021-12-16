@@ -1,7 +1,7 @@
 """
 ¿Qué tres cosas están mal en este código?
 """
-#exercicis del capítol 03
+#exercici 6 del capítol 03
 #maria nicolau jaume
 """
 x = input("Introduce un número:")

@@ -8,14 +8,20 @@ Escribe un programa en Python que:
 #maria nicolau jaume
 
 total = 0
- 
+positius = 0
+negatius = 0
+zero = 0
+
 for i in range(7):
-    x = int(input("Digués 1 número"))
-num = total + x 
-print("El total es:", num)
-if x > 0:
-    print("La suma dels números positius és:", num)
-elif x < 0:
-    print("La suma dels números negatius a zero és:", num)
-else:
-    print("La suma dels números igual a zero és:", num)
+    x = int(input("Digués un número "))
+    if x > 0:
+        positius += 1
+    elif x < 0:
+        negatius += 1
+    else:
+        zero += 1
+    total += x 
+print("El total es: ",total)
+print("Número de positius: ",positius)
+print("Número de negatius: ",negatius)
+print("Número de zeros: ",zero)

@@ -1,3 +1,12 @@
+"""
+Volem saber si una paraula és capicua:
+entrada: “capicua”, sortida: no és capicua
+entrada: “anna”, sortida: és capicua.
+"""
+
+#exemple pràctic 2 llistes
+#maria nicolau jaume
+
 print ("Digués una paraula:")
 paraula = input()
 

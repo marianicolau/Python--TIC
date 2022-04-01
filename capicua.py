@@ -7,7 +7,7 @@ entrada: “anna”, sortida: és capicua.
 
 
 """
-
+#caballo
 #exemple pràctic 2 llistes
 #maria nicolau jaume
 

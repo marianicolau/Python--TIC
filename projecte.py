@@ -1,22 +1,12 @@
 """
-Crear una altra bolla, d’un altre color.
-- es crea a init amb self.ball2(paràmetres)
+Projecte Bol, Xesqui and Mory
+Nom:Nadal és passat
 """
-#maria nicolau jaume
 import arcade
 
 SCREEN_WIDTH = 640
 SCREEN_HEIGHT = 480
-"""
-def colisio(a,b):
-    #de les posicions i el radi
-    #retorna sihi ha colisió
-    if (a.position_x+a.radius == b.position_x.radius):
-        print("COL·LISIÓ")
-        return True
-    else:
-        return False
-    """
+
 class Ball:
     """ This class manages a ball bouncing on the screen. """
 
@@ -63,28 +53,26 @@ class MyGame(arcade.Window):
         super().__init__(width, height, title)
 
         # Set the background color
-        arcade.set_background_color(arcade.color.LIGHT_CYAN)
+        arcade.set_background_color(arcade.color.WHITE)
 
                 # Attributes to store where our ball is
-        self.ball = Ball(150, 50, 10, 3, 20, arcade.color.PLUM)
-        self.ball2 = Ball(120, 40, 10, 2, 20, arcade.color.SALMON)
+        
+        self.ball = Ball(50, 300, 0, -3, 4, arcade.color.WHITE)
+        self.ball2 = Ball(120, 300, 0, -3, 4, arcade.color.WHITE)
 
     def on_draw(self):
         """ Called whenever we need to draw the window. """
-        arcade.start_render()
         self.ball.draw()
         self.ball2.draw()
 
     def update(self, delta_time):
         """ Called to update our objects. Happens approximately 60 times per second."""
-        self.ball.update()
         self.ball2.update()
-        """colisio(self.ball,self.ball2)"""
+        self.ball.update()
 
 def main():
-    window = MyGame(640, 480, "Drawing Example")
-
+    window = MyGame(640, 480, "Drawinccccg Example")
+    
     arcade.run()
-
 
 main()

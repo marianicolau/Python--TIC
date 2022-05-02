@@ -4,9 +4,12 @@ import random
 SCREEN_WIDTH = 640
 SCREEN_HEIGHT = 480
 
+<<<<<<< HEAD
 #def sol (px,py):
 #    arcade.draw_circle_filled(20+px, 360+py, 30, arcade.csscolor.YELLOW)
 
+=======
+>>>>>>> fff130306a4e93b6e1f46ea04d471d6579127c61
 class Ball:
     """ This class manages a ball bouncing on the screen. """
 
@@ -49,6 +52,7 @@ class Ball:
         if self.position_y > SCREEN_HEIGHT - self.radius:
             self.change_y *= -1
 
+<<<<<<< HEAD
 class Ninot(Ball):
     def __init__(self, position_x, position_y, change_x, change_y, radius, color):
         """ Constructor. """
@@ -85,6 +89,8 @@ class Tronc(Ball):
     def update(self):
         pass
 
+=======
+>>>>>>> fff130306a4e93b6e1f46ea04d471d6579127c61
 def colisio(a,b):
     distancia = math.sqrt(math.pow((a.position_x - b.position_x),2) + math.pow((a.position_y - b.position_y),2))
     #print(distancia)
@@ -96,7 +102,11 @@ def colisio(a,b):
 class Floc(Ball):
     def __init__(self, position_x, position_y, change_x, change_y, radius, color):
         super().__init__(position_x, position_y, change_x, change_y, radius, color)
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> fff130306a4e93b6e1f46ea04d471d6579127c61
     def update(self):
         """ Code to control the ball's movement. """
 
@@ -114,6 +124,7 @@ class Floc(Ball):
         if self.position_y < self.radius:
             self.position_y = SCREEN_HEIGHT 
             
+<<<<<<< HEAD
 def ninot (px,py):
     #cos
     arcade.draw_circle_filled(100+px, 100+py, 60, arcade.color.WHITE)
@@ -134,6 +145,9 @@ def ninot (px,py):
     arcade.draw_lrtb_rectangle_filled(70+px, 130+px, 300+py, 260+py, arcade.csscolor.BLACK)
     arcade.draw_lrtb_rectangle_filled(50+px, 150+px, 270+py, 260+py, arcade.csscolor.BLACK)
     
+=======
+        
+>>>>>>> fff130306a4e93b6e1f46ea04d471d6579127c61
 
 class MyGame(arcade.Window):
 
@@ -146,6 +160,7 @@ class MyGame(arcade.Window):
         arcade.set_background_color(arcade.color.DARK_BLUE)
 
         self.llista = []
+<<<<<<< HEAD
         
         px=0
         py=0
@@ -171,6 +186,9 @@ class MyGame(arcade.Window):
         self.llista.append(Tronc(285+px, 315+px, 160+py,0+py, 0, arcade.csscolor.BROWN))
         """
 
+=======
+        px=0
+>>>>>>> fff130306a4e93b6e1f46ea04d471d6579127c61
         for i in range(10):
             self.llista.append(Floc(random.randrange(px-50, px+80),random.randrange(-50, 50), 0,random.randrange(-3,-1), random.randrange(3, 4), arcade.color.WHITE))
             self.llista.append(Floc(random.randrange(px-60, px+90),random.randrange(-150, 150), 0, random.randrange(-3,-1), random.randrange(3, 4), arcade.color.WHITE))
@@ -180,28 +198,53 @@ class MyGame(arcade.Window):
             self.llista.append(Floc(random.randrange(px-100, px+170),random.randrange(-350, 350), 0, random.randrange(-3,-1), random.randrange(3, 4), arcade.color.WHITE))
             px +=65
         
+<<<<<<< HEAD
         #self.llista.append(Sol(300, 360, 30,10,10, arcade.csscolor.YELLOW))
+=======
+>>>>>>> fff130306a4e93b6e1f46ea04d471d6579127c61
 
         # Attributes to store where our ball is
         #self.ball = Floc(50, 50, 0, -1, 10, arcade.color.WHITE)
         #self.ball2 = Floc(150, 50, 0, -2, 10, arcade.color.WHITE)
 
     
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> fff130306a4e93b6e1f46ea04d471d6579127c61
     def on_draw(self):
         """ Called whenever we need to draw the window. """
         arcade.start_render()
         for i in self.llista:
             i.draw()
+<<<<<<< HEAD
         ninot(20,20)
+=======
+        #self.ball.draw()
+        #self.ball2.draw()
+>>>>>>> fff130306a4e93b6e1f46ea04d471d6579127c61
 
     def update(self, delta_time):
         """ Called to update our objects. Happens approximately 60 times per second."""
         for i in self.llista:
             i.update()
+<<<<<<< HEAD
 
 def main():
     window = MyGame(600, 600, "Drawing Example")
 
     arcade.run()
 
+=======
+        #self.ball2.update()
+        #self.ball.update()
+    
+def main():
+    window = MyGame(640, 480, "Drawing Example")
+
+    arcade.run()
+
+
+>>>>>>> fff130306a4e93b6e1f46ea04d471d6579127c61
 main()
